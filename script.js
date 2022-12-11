@@ -19,6 +19,8 @@ Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagi
 
 const userChoice = document.getElementById('userChoice');
 const reset = document.getElementById('reset');
+const result = document.getElementById('result');
+
 
 
 userChoice.addEventListener('click' , function(){
@@ -34,14 +36,17 @@ userChoice.addEventListener('click' , function(){
 
     const price = (kms * priceKm);
     console.log(price);
-
+    
     let finalPrice = price
+    document.getElementById('result').innerText = name + ', il prezzo del tuo biglietto è: ' + finalPrice + '€';
 
     if (age < 18) {
         finalPrice = (price / 100 *80).toFixed(2)
+        document.getElementById('result').innerText = name + ', il prezzo del tuo biglietto Young è: ' + finalPrice + name + '€';
     }  
     else if (age >= 65) {
         finalPrice = ((price / 100)*60).toFixed(2)
+        document.getElementById('result').innerText = name + ', il prezzo del tuo biglietto Senior è: ' + finalPrice + name + '€';
     }
 
     console.log(finalPrice);
