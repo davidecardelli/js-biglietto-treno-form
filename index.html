@@ -21,6 +21,37 @@
     <script defer src="script.js"></script>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center text-uppercase mb-5">Il tuo biglietto del treno</h1>
+            <div class="card p-3">
+                <div class="col d-flex gap-3">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" placeholder="Come ti chiami?">
+                        </div>
+                    </div>
+                   <div class="col">
+                       <div class="mb-3">
+                           <label for="kms" class="form-label">Kms</label>
+                           <input type="number" class="form-control" id="kms" placeholder="Quanti km vuoi percorrere?">
+                       </div>
+                   </div>
+                   <div class="col">
+                       <div class="mb-3">
+                           <label for="age" class="form-label">Anni</label>
+                           <input type="number" class="form-control" id="age" placeholder="Quanti anni hai?">
+                       </div>
+                   </div>
+               </div>
+               <div class="d-flex justify-content-center gap-5 py-2 ">
+                   <button id="userChoice" class="btn btn-success">Invia</button>
+                   <button id="reset" class="btn btn-danger">Reset</button>
+               </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
