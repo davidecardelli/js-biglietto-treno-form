@@ -42,11 +42,11 @@ userChoice.addEventListener('click' , function(){
 
     if (age < 18) {
         finalPrice = (price / 100 *80).toFixed(2)
-        document.getElementById('result').innerText = name + ', il prezzo del tuo biglietto Young è: ' + finalPrice + name + '€';
+        document.getElementById('result').innerText = name + ', il prezzo del tuo biglietto Young è: ' + finalPrice + '€';
     }  
     else if (age >= 65) {
         finalPrice = ((price / 100)*60).toFixed(2)
-        document.getElementById('result').innerText = name + ', il prezzo del tuo biglietto Senior è: ' + finalPrice + name + '€';
+        document.getElementById('result').innerText = name + ', il prezzo del tuo biglietto Senior è: ' + finalPrice + '€';
     }
 
     console.log(finalPrice);
